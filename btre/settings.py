@@ -145,3 +145,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yasir8hadi@gmail.com'
 EMAIL_HOST_PASSWORD = 'activa123'
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
